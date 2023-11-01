@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>v._43</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Money\" />
+    <None Remove="Inventory\" />
+    <None Remove="UserExperience\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Money\" />
+    <Folder Include="Inventory\" />
+    <Folder Include="UserExperience\" />
+  </ItemGroup>
+</Project>
