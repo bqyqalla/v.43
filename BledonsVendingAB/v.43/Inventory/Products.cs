@@ -20,24 +20,55 @@ namespace v._43.Inventory
             Quantity = quantity;
         }
 
-
+        public abstract void Examine();
+        public abstract void Use();
     }
-    class Drink : Products
+   public class Drink : Products
     {
+        
+
         public Drink(string id, string name, int price, int quantity) : base(id, name, price, quantity)
         {
         }
-    }
-    class Healty : Products
+        
+
+        public override void Examine()
+        {
+            Console.WriteLine($"ID: {ID}, Name: {Name}, Price: ${Price}, Quantity: {Quantity}");
+        }
+        public override void Use()
+        {
+            Console.WriteLine("");
+        }
+    
+
+}
+    public class Healty : Products
     {
         public Healty(string id, string name, int price, int quantity) : base(id, name, price, quantity)
         {
         }
+        public override void Examine()
+        {
+            Console.WriteLine($"ID: {ID}, Name: {Name}, Price: ${Price}, Quantity: {Quantity}");
+        }
+        public override void Use()
+        {
+            Console.WriteLine("Eat the stuff ");
+        }
     }
-    class Snack : Products
+   public class Snack : Products
     {
         public Snack(string id, string name, int price, int quantity) : base(id, name, price, quantity)
         {
+        }
+        public override void Examine()
+        {
+            Console.WriteLine($"ID: {ID}, Name: {Name}, Price: ${Price}, Quantity: {Quantity}");
+        }
+        public override void Use()
+        {
+            Console.WriteLine("");
         }
     }
 
@@ -61,9 +92,9 @@ namespace v._43.Inventory
         }
 
     }
-    class Fill
+    public class Fill
     {
-        static void Refill(Stock stock)
+       public static void Refill(Stock stock)
         {
 
 
@@ -79,7 +110,7 @@ namespace v._43.Inventory
             stock.AddStock(new Healty("Healthy", "Tiny Carrots", 15, 5));
             stock.AddStock(new Healty("Healthy", "Golden Duck Egg", 1000, 5)); // Ger evigt liv. 
 
-            stock.AddStock(new Snack("Snack", "Kex Choklad", 20, 5)); //  citat från flickvännen "alla bra Vendingmashines måste ha Kex Choklad "
+            stock.AddStock(new Snack("Snack", "Kex Choklad", 20, 5)); //  citat från Fia-  "alla bra Vendingmashines måste ha Kex Choklad "
             stock.AddStock(new Snack("Snack", "Sport Lunch", 26, 5));
             stock.AddStock(new Snack("Snack", "Choklad Boll ", 15, 5));
 
