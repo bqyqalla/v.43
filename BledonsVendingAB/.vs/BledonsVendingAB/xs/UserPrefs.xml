@@ -1,4 +1,30 @@
 ﻿<Properties StartupConfiguration="{D9531EE8-8909-4CC5-B1F8-DDA0EE73D1F1}|Default">
-  <MonoDevelop.Ide.ItemProperties.v.43 FirstBuild="True" />
+  <MonoDevelop.Ide.ItemProperties.v.43 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="BledonsVendingAB">
+            <Node name="v.43" expanded="True">
+              <Node name="Money" expanded="True">
+                <Node name="VendingMachineService.cs" selected="True" />
+              </Node>
+              <Node name="UserExperience" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/bledonqyqalla/Desktop/coding/v.43/v.43/BledonsVendingAB/v.43/Program.cs" relfile="v.43/Program.cs" line="17" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
