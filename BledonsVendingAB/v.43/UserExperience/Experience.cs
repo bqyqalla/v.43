@@ -1,16 +1,20 @@
 ﻿using System;
+using v._43.Money;
+
 namespace v._43.UserExperience
 {
 	public class Experience
-	{ 
-		public Experience()
-		{
+	{
+        VendingMachineService vendingMachine = new VendingMachineService();
 
+        public Experience()
+		{
+			
 		}
 		public void Meny()
 		{
-			while (true)
-			{
+			//while (true)
+			//{
 				Console.WriteLine("1. See Meny");
                 Console.WriteLine("2. Insert Money");
                 Console.WriteLine("3. Buy Item");
@@ -22,23 +26,23 @@ namespace v._43.UserExperience
 				switch (input)
 				{
 					case "1":
-						ShowAll();
+						vendingMachine.ShowAll();//ShowAll();
 						break;
 							case "2":
-						InsertMoney();
+						//InsertMoney();
 						break;
 							case "3":
-						BuyItem();
+						//BuyItem();
 						break;
 							case "4":
-						Cancel();
+						//Cancel();
 							break;//= cancel = retun money and go back to meny()
 
 					default:
 						Console.WriteLine(" Please select one of the options");
 						break;
 				}
-			}
+			//}
 		}
 	}
 }

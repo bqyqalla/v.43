@@ -11,7 +11,7 @@ namespace v._43.Money
 
         public VendingMachineService()
         {
-            Fill.Refill(stock); // add stock
+            Fill.Refill(Stock); // add stock
         }
 
         public List<string> ShowAll()
@@ -22,13 +22,17 @@ namespace v._43.Money
             {
                 productList.Add($" ID: {product.ID}, Name: {product.Name}, Price: {product.Price} kr,Quantity {product.Quantity}");
             }
-
-
+            foreach (var product in productList )
+            {
+                Console.WriteLine(product);
+            }
+               
+                    
             return productList;
         }
 
 
-        public Products BuyItem(String productID)
+        public Products BuyItem(int productID)
         {
             Products product = Stock.products.Find(p => p.ID == productID);
 
@@ -39,15 +43,18 @@ namespace v._43.Money
 
                 Console.WriteLine($" You just bought a {product.Name}. Balance: {moneyPool}kr");
 
-                return product;
+                
             }
+
             else
             {
                 Console.WriteLine("Unable to buy the product. Please cheack your Balance or Quantaty of the item.");
             }
 
+
+            return product;
         }
-        public void InsertMoney(int money)
+        public int InsertMoney(int money)
         {
 
             if (Array.IndexOf(validDenominations, money) != -1)
@@ -59,6 +66,7 @@ namespace v._43.Money
                 Console.WriteLine("Please Use Valid Denominations");
             }
 
+            return money;
         }
 
         public Dictionary<int, int> EndTransaction()

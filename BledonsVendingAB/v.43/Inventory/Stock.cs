@@ -44,11 +44,11 @@ namespace v._43.Inventory
             stock.AddStock(new Snack(8, "Choklad Boll ", 15, 5));
 
             List<Products> productList = stock.GetProducts();
-            foreach (Products product in productList)
-            {
-                Console.WriteLine($"ID: {product.ID}, Name: {product.Name}, Price: ${product.Price}, Quantity: {product.Quantity}");
+            //foreach (Products product in productList)
+            //{
+            //    Console.WriteLine($"ID: {product.ID}, Name: {product.Name}, Price: ${product.Price}, Quantity: {product.Quantity}");
                 
-            }
+            //}
 
             Console.ReadLine();
 

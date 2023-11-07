@@ -77,10 +77,9 @@ namespace v._43.Inventory
 
     public interface IVending
     {
-        Products BuyItem(string productID);
+        Products BuyItem(int productID);
         List<string> ShowAll();
-        string Details(string productName);
-        int insertMoney(int amount);
+        int InsertMoney(int money);
         Dictionary<int, int> EndTransaction();
     }
 }
